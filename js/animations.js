@@ -41,10 +41,14 @@ function setupCounters() {
     const duration = 1300;
     const start = performance.now();
 
+    function fmt(n) {
+      return n.toLocaleString('pt-BR');
+    }
+
     function step(now) {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3); // slows down at the end
-      element.textContent = Math.round(target * eased) + suffix;
+      element.textContent = fmt(Math.round(target * eased)) + suffix;
       if (progress < 1) requestAnimationFrame(step);
     }
 
