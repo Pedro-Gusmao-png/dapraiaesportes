@@ -1,0 +1,494 @@
+/* ============================================================
+   Responsive adjustments — desktop styles come first,
+   this file adapts them to smaller screens.
+   ============================================================ */
+
+
+/* ============================================================
+   Tablet — up to 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  :root {
+    --section-padding: 72px 24px;
+  }
+
+  /* Nav links move into the mobile dropdown panel */
+  .nav ul {
+    display: none;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    text-align: center;
+  }
+
+  .hero-text   { margin-inline: auto; }
+  .hero-actions,
+  .hero-chips  { justify-content: center; }
+
+  .hero__visual {
+    max-width: 580px;
+    margin-inline: auto;
+  }
+
+  .hero-tag { right: 6px; }
+
+  .usp-bar     { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stats-grid  { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+
+  .why__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .why-intro {
+    position: static;
+  }
+
+  /* Manifesto pillars keep 3 columns but tighter */
+  .manifesto__pillars {
+    margin-top: 44px;
+    padding-top: 28px;
+  }
+
+  .manifesto__pillars li {
+    padding: 0 12px;
+  }
+
+  /* Journey: text above the carousel */
+  .story__grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .story-media .carousel {
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  /* Featured custom work: text above, video below */
+  .feature-video__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feature-video__frame {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  /* Testimonials: 2 columns */
+  .tcarousel__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FAQ: intro above the accordion */
+  .faq__grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .faq-intro {
+    position: static;
+  }
+
+  /* Flow cards become a 2x2 zigzag */
+  .flow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+
+  .tooltip { display: none; } /* no hover on touch devices */
+}
+
+
+/* ============================================================
+   Mobile — up to 700px
+   ============================================================ */
+@media (max-width: 700px) {
+
+  /* ---------- Header ----------
+     Compact bar treated as its own component: uniform square
+     controls, centered logo, badge floating clear of the icon. */
+  :root {
+    --header-height: 62px;
+    --section-padding: 64px 20px;
+  }
+
+  .container { padding-inline: 20px; }
+
+  body { overflow-x: clip; }
+
+  .nav-toggle { display: grid; }
+
+  .cart-btn { order: -1; }
+
+  .cart-btn,
+  .nav-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .cart-btn svg  { width: 21px; height: 21px; }
+  .nav-toggle svg { width: 22px; height: 22px; }
+
+  .cart-btn__badge {
+    top: -6px;
+    right: -6px;
+    min-width: 19px;
+    height: 19px;
+    font-size: .68rem;
+    box-shadow: 0 0 0 2px var(--white);
+  }
+
+  .logo__img { height: 42px; }
+  .logo--footer .logo__img { height: 50px; }
+
+  .nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 24px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 22px 40px rgba(23, 32, 51, .14);
+
+    transform: translateY(-130%);
+    visibility: hidden;
+    transition: transform .35s ease, visibility .35s ease;
+  }
+
+  .header.menu-open .nav {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .header.menu-open,
+  .header.scrolled.menu-open {
+    box-shadow: none;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav a:not(.btn) {
+    display: block;
+    padding: 14px 4px;
+    font-size: 1.02rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav a:not(.btn)::after { display: none; }
+
+  .nav__cta {
+    margin-top: 18px;
+    width: 100%;
+  }
+
+
+  /* ---------- Hero ----------
+     Mobile-first composition: the logo opens the fold and the
+     content stacks beneath it with a consistent vertical rhythm. */
+  .hero {
+    padding-top: calc(var(--header-height) + 36px);
+    padding-bottom: 96px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), 0 100%);
+  }
+
+  .hero__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero__visual {
+    order: -1;
+    width: min(78%, 320px);
+    margin: 0 auto 32px;
+  }
+
+  .hero-image {
+    aspect-ratio: 1 / 1; /* square tile — logo is square */
+    box-shadow: 0 24px 44px rgba(0, 0, 0, .26);
+  }
+
+  .hero-tag {
+    top: auto;
+    bottom: 12px;
+    right: 10px;
+    font-size: .8rem;
+    padding: 7px 11px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__badge {
+    max-width: 100%;
+    margin-bottom: 18px;
+    padding: 7px 14px;
+    font-size: .64rem;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* Natural wrapping replaces the forced <br> breaks */
+  .hero h1 br { display: none; }
+
+  .hero h1 {
+    max-width: 21ch;
+    margin-bottom: 16px;
+    font-size: clamp(1.95rem, 8.4vw, 2.4rem);
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  .hero-text {
+    max-width: 330px;
+    margin-bottom: 26px;
+    font-size: .95rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 330px;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .hero-actions .btn-lg {
+    padding: 14px 22px;
+    font-size: .96rem;
+  }
+
+  .hero-actions svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-chips {
+    justify-content: center;
+    max-width: 330px;
+    gap: 10px 18px;
+  }
+
+  .hero-chips li { font-size: .84rem; }
+
+  /* USP cards straddle the diagonal cut on purpose */
+  .usp-bar {
+    grid-template-columns: 1fr;
+    position: relative;
+    z-index: 2;
+    margin-top: -52px;
+  }
+
+
+  /* ---------- Sections ---------- */
+
+  /* Journey: compact years row and tighter carousel controls */
+  .story-years {
+    gap: 12px;
+    font-size: 2.2rem;
+  }
+
+  .story-years svg { width: 26px; height: 26px; }
+
+  .carousel__arrow {
+    width: 38px;
+    height: 38px;
+    top: calc(50% - 19px);
+  }
+
+  .carousel__arrow--prev { left: 10px; }
+
+  .carousel__arrow--next { right: 10px; }
+
+  /* Testimonials: single column, compact dots */
+  .tcarousel__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 26px 22px;
+  }
+
+  .tcarousel__dots {
+    margin-top: 20px;
+  }
+
+  /* FAQ: tighter cards and centered final CTA */
+  .faq-card summary {
+    gap: 12px;
+    padding: 16px 18px;
+    font-size: .95rem;
+  }
+
+  .faq-card__num {
+    width: 28px;
+    height: 28px;
+    font-size: .85rem;
+  }
+
+  .faq-card__body {
+    padding: 0 18px 20px;
+  }
+
+  .why-item {
+    gap: 16px;
+    padding: 26px 4px;
+  }
+
+  .why-item__number { font-size: 1.7rem; }
+  .why-item__icon   { width: 48px; height: 48px; }
+  .why-item__icon svg { width: 22px; height: 22px; }
+
+  /* Flow cards stack, stagger removed */
+  .flow { gap: 14px; }
+
+  .flow-step:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .flow-step {
+    padding: 62px 22px 24px;
+  }
+
+  .flow-step__num {
+    top: -16px;
+    right: -6px;
+    font-size: 5rem;
+  }
+
+  /* Manifesto pillars stack with horizontal dividers */
+  .manifesto__pillars {
+    grid-template-columns: 1fr;
+    margin-top: 44px;
+    padding-top: 0;
+  }
+
+  .manifesto__pillars li {
+    padding: 18px 8px;
+  }
+
+  .manifesto__pillars li + li {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .cta {
+    clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0 100%);
+    padding: 76px 24px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+
+  /* ---------- Floating elements ---------- */
+  .toast {
+    left: 16px;
+    right: 16px;
+    bottom: 94px; /* above the WhatsApp button */
+    max-width: none;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* ============================================================
+   Small phones — up to 380px
+   ============================================================ */
+@media (max-width: 380px) {
+
+  :root {
+    --header-height: 58px;
+    --section-padding: 60px 16px;
+  }
+
+  .container { padding-inline: 16px; }
+
+  .logo__img { height: 38px; }
+
+  .cart-btn,
+  .nav-toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero h1 {
+    max-width: 300px;
+    font-size: clamp(1.75rem, 8.6vw, 2.05rem);
+  }
+
+  .hero-text,
+  .hero-actions,
+  .hero-chips { max-width: 300px; }
+
+  .hero-actions .btn-lg {
+    padding: 13px 18px;
+    font-size: .92rem;
+  }
+
+  .hero-chips li { font-size: .8rem; }
+
+  .whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .toast {
+    left: 12px;
+    right: 12px;
+  }
+}
+
+
+/* ============================================================
+   Desktop refinement — vertical balance of the hero visual
+   Top-aligned, then nudged down to sit between the headline
+   and the buttons (intermediate between centered and top).
+   The offset shrinks on short/windowed viewports so the card
+   never drifts below the fold. Increase clamp max / preferred
+   value to move DOWN, decrease to move UP.
+   ============================================================ */
+@media (min-width: 1025px) {
+  .hero__visual {
+    align-self: start;
+    margin-top: clamp(16px, 5vh, 42px);
+  }
+}

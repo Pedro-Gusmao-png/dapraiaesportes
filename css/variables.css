@@ -1,0 +1,33 @@
+/* Design tokens — change here to restyle the whole site */
+
+:root {
+  /* Brand palette */
+  --primary: #0057B8;
+  --primary-dark: #003B7A;
+  --secondary: #1976D2;
+  --white: #FFFFFF;
+  --gray-bg: #F5F8FC;
+  --text: #172033;
+  --wa-green: #25D366;
+
+  /* Derived */
+  --border: #DCE6F2;
+  --text-muted: rgba(23, 32, 51, .72);
+  --shadow-sm: 0 6px 20px rgba(23, 32, 51, .07);
+  --shadow-md: 0 14px 34px rgba(0, 87, 184, .16);
+
+  /* Typography */
+  --font-heading: "Barlow Condensed", Arial, sans-serif;
+  --font-body: "Montserrat", Arial, sans-serif;
+
+  /* Layout */
+  --container: 1200px;
+  --section-padding: 92px 24px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --header-height: 74px;
+
+  /* Motion */
+  --transition: .25s ease;
+  --transition-slow: .45s ease;
+}

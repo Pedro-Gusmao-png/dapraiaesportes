@@ -1,0 +1,21 @@
+FAVICON (ícone da aba do navegador)
+====================================
+
+Já está pronto! Os arquivos PNG aqui foram gerados automaticamente
+a partir do logo oficial (assets/img/logo/logo.png):
+
+- favicon-32x32.png     → abas de navegador
+- favicon-16x16.png     → abas (tamanho pequeno)
+- favicon-192.png       → atalhos/tela inicial Android
+- apple-touch-icon.png  → iPhone/iPad (tela de início)
+
+Todos já estão vinculados no index.html.
+
+PARA REGERAR (se trocar o logo)
+-------------------------------
+Opção fácil: https://realfavicongenerator.net
+Envie o novo logo.png, baixe os tamanhos e substitua estes arquivos
+(mantendo os mesmos nomes).
+
+Opção manual: qualquer editor de imagem redimensionando para
+32x32, 16x16, 192x192 e 180x180 (PNG).

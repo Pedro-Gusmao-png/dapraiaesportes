@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Da Praia Esportes — Futmesa -->
+  <title>Da Praia Esportes | Futmesas Personalizadas — Entrega para todo o Brasil</title>
+  <meta name="description" content="Futmesas profissionais e personalizadas para casa, bar e campeonato. Escolha seu modelo, personalize com suas cores e receba em casa. Entrega para todo o Brasil.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:title" content="Da Praia Esportes | Futmesas Personalizadas">
+  <meta property="og:description" content="Monte sua arena de futmesa. Modelos personalizados com entrega para todo o Brasil.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon (gerado a partir do logo oficial) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Scripts (order matters: config first, main last) -->
+  <script src="js/config.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.52.05-1.02.24-3.44-.72-2.9-1.14-4.72-4.15-4.86-4.34-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.56.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.61-.07.16-.19.7-.81.89-1.09.19-.28.38-.23.64-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.11.07.66-.17 1.34Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="currentColor" d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9 1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27 6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><path fill="currentColor" d="M19 14V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-9-1c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-6v11c0 1.1-.9 2-2 2H4v-2h17V7h2z"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></symbol>
+
+    <!-- Premium line icons -->
+    <symbol id="i-diamond" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l4 6-9 12L3 9l4-6Z"/><path d="M3 9h18"/><path d="M7 3l2.5 6L12 21M17 3l-2.5 6L12 21"/></g></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 11.5 9 5 9-5"/><path d="m3 16 9 5 9-5"/></g></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h8.8M17.2 7H20"/><circle cx="15" cy="7" r="2.2"/><path d="M4 12h1.8M10.2 12H20"/><circle cx="8" cy="12" r="2.2"/><path d="M4 17h6.8M15.2 17H20"/><circle cx="13" cy="17" r="2.2"/></g></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4.5" height="6.5" rx="1.8"/><rect x="16.5" y="13" width="4.5" height="6.5" rx="1.8"/><path d="M20.5 19.5v.5a2.5 2.5 0 0 1-2.5 2.5h-3"/></g></symbol>
+
+    <!-- Journey icons -->
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m14.5 6-6 6 6 6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9.5 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></g></symbol>
+
+    <!-- Mercado Livre hand/smile mark -->
+    <symbol id="i-ml" viewBox="0 0 24 24"><path d="M5 15c0-4 3-7.5 7-9.5 4 2 7 5.5 7 9.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="header" id="site-header">
+    <div class="container header__inner">
+
+      <a href="#inicio" class="logo" aria-label="Da Praia Esportes">
+        <img src="assets/img/logo/logo.png" alt="Da Praia Esportes" class="logo__img">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="modelos-futpub.html">Modelos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#porque">Por que nós</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="https://www.mercadolivre.com.br/pagina/oro8zvaj"
+                 target="_blank"
+                 rel="noopener noreferrer">Loja Mercado Livre</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary nav__cta"
+           data-contact="whatsapp"
+           data-message="Olá! Estou procurando uma futmesa personalizada. Podem me ajudar?">
+          Solicitar orçamento
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="cart-btn" data-cart-open aria-label="Abrir meu orçamento">
+          <svg aria-hidden="true"><use href="#i-cart"></use></svg>
+          <span class="cart-btn__badge" data-cart-badge hidden>0</span>
+        </button>
+        <button type="button" class="nav-toggle" data-menu-toggle
+                aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <svg class="icon-open" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+
+        <div class="hero-content reveal">
+          <span class="hero__badge">FUTMESA PERSONALIZADA • ENTREGA EM TODO O BRASIL</span>
+
+          <h1>SUA FUTMESA PERSONALIZADA.<br>SUAS REGRAS.<br><span class="highlight highlight-light">SUA ARENA.</span></h1>
+
+          <p class="hero-text">
+            Mesas profissionais feitas para durar, com a identidade da sua marca, do seu time
+            ou do seu espaço. Você escolhe o modelo, aprova a arte e recebe pronta para jogar.
+          </p>
+
+          <div class="hero-actions">
+            <a href="modelos-futpub.html" class="btn btn-white btn-lg">Ver modelos</a>
+            <a href="#" class="btn btn-whatsapp btn-lg"
+               data-contact="whatsapp"
+               data-message="Olá! Tenho interesse em uma futmesa personalizada. Podem me passar valores e prazo de produção?">
+              <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg> Chamar no WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero-chips">
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> Personalização total</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> Feita para durar</li>
+            <li><svg aria-hidden="true"><use href="#i-check"></use></svg> Pronta pra jogar</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <img src="assets/img/logo/logo.png"
+               alt="Logo da Da Praia Esportes"
+               class="hero-image" width="640" height="480" loading="eager" decoding="async">
+          <span class="hero-tag">100% PERSONALIZÁVEL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP bar -->
+    <div class="container">
+      <div class="usp-bar reveal">
+        <div class="usp-bar__item">
+          <svg aria-hidden="true"><use href="#i-truck"></use></svg>
+          <div><strong>Entrega nacional</strong><span>Enviamos para todo o Brasil</span></div>
+        </div>
+        <div class="usp-bar__item">
+          <svg aria-hidden="true"><use href="#i-shield"></use></svg>
+          <div><strong>Garantia de 12 meses</strong><span>Estrutura reforçada</span></div>
+        </div>
+        <div class="usp-bar__item">
+          <svg aria-hidden="true"><use href="#i-card"></use></svg>
+          <div><strong>Pagamento facilitado</strong><span>Parcele como preferir</span></div>
+        </div>
+        <div class="usp-bar__item">
+          <svg aria-hidden="true"><use href="#i-tools"></use></svg>
+          <div><strong>Suporte especializado</strong><span>Falamos a língua do futmesa</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong data-count="200" data-suffix="+">0+</strong><span>Mesas entregues</span></div>
+        <div class="stat reveal"><strong data-count="50" data-suffix="+">0+</strong><span>Cidades atendidas</span></div>
+        <div class="stat reveal"><strong data-count="100" data-suffix="%">0%</strong><span>Personalizável</span></div>
+        <div class="stat reveal"><strong data-count="12" data-suffix=" meses">0 meses</strong><span>De garantia</span></div>
+      </div>
+    </section>
+
+    <!-- FUTPUB preview -->
+    <section class="section" id="modelos">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="eyebrow">NOSSOS MODELOS</span>
+          <h2>CONHEÇA NOSSOS <span class="highlight">FUTPUB</span></h2>
+          <p>Mesas profissionais para todos os gustos: da versatilidade da Compacta à tecnologia da Smart. Escolha o modelo ideal para você.</p>
+        </header>
+
+        <div style="text-align:center;margin-top:36px" class="reveal">
+          <a href="modelos-futpub.html" class="btn btn-primary btn-lg">Ver todos os modelos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-night" id="como-funciona">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="eyebrow">PASSO A PASSO</span>
+          <h2>COMO <span class="highlight highlight-light">FUNCIONA</span></h2>
+          <p>Um processo acompanhado de perto: você aprova cada etapa antes dela acontecer.</p>
+        </header>
+
+        <ol class="flow">
+          <li class="flow-step reveal">
+            <span class="flow-step__num" aria-hidden="true">01</span>
+            <h3>Você escolhe o modelo</h3>
+            <p>Starter, Pro, Champions ou Clube. Na dúvida, a gente te ajuda a escolher.</p>
+            <span class="flow-step__meta">Resposta rápida no WhatsApp</span>
+          </li>
+          <li class="flow-step reveal">
+            <span class="flow-step__num" aria-hidden="true">02</span>
+            <h3>Deixa com a sua cara</h3>
+            <p>Nos envie logo, cores e nome. Criamos uma arte prévia para você aprovar.</p>
+            <span class="flow-step__meta">Nada é produzido sem aprovação</span>
+          </li>
+          <li class="flow-step reveal">
+            <span class="flow-step__num" aria-hidden="true">03</span>
+            <h3>Produzimos com reforço</h3>
+            <p>Materiais selecionados, estrutura reforçada e acabamento caprichado.</p>
+            <span class="flow-step__meta">Padrão premium de acabamento</span>
+          </li>
+          <li class="flow-step reveal">
+            <span class="flow-step__num" aria-hidden="true">04</span>
+            <h3>Recebe e chama a galera</h3>
+            <p>Entregamos onde você estiver. É só preparar o ambiente e jogar.</p>
+            <span class="flow-step__meta">Envio para todo o Brasil</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section" id="porque">
+      <div class="container why__grid">
+
+        <header class="why-intro reveal">
+          <span class="eyebrow">O PADRÃO DA PRAIA</span>
+          <h2>EXCLUSIVIDADE EM<br><span class="highlight">CADA DETALHE</span></h2>
+          <p>
+            Não trabalhamos com fórmula pronta. Cada futmesa é um projeto único,
+            desenhado ao lado do cliente e executado com materiais selecionados,
+            acabamento impecável e conferência peça por peça antes do envio.
+          </p>
+          <a href="#" class="btn btn-primary"
+             data-contact="whatsapp"
+             data-message="Olá! Vi o trabalho de vocês e quero montar uma futmesa personalizada. Como funciona o processo?">
+            <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+            Criar minha mesa exclusiva
+          </a>
+        </header>
+
+        <ul class="why-list">
+          <li class="why-item reveal">
+            <span class="why-item__number">01</span>
+            <span class="why-item__icon"><svg aria-hidden="true"><use href="#i-diamond"></use></svg></span>
+            <div class="why-item__body">
+              <h3>Peça única, jamais repetida</h3>
+              <p>Sua arte, seu escudo, suas cores. Nenhuma mesa que sai daqui é igual à outra — o projeto é 100% seu.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <span class="why-item__number">02</span>
+            <span class="why-item__icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></span>
+            <div class="why-item__body">
+              <h3>Materiais de alto padrão</h3>
+              <p>Estrutura reforçada, madeira de alta densidade e componentes premium para milhares de partidas.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <span class="why-item__number">03</span>
+            <span class="why-item__icon"><svg aria-hidden="true"><use href="#i-sliders"></use></svg></span>
+            <div class="why-item__body">
+              <h3>Personalização milimétrica</h3>
+              <p>Você aprova cada detalhe antes da produção: medidas, acabamentos e identidade visual.</p>
+            </div>
+          </li>
+          <li class="why-item reveal">
+            <span class="why-item__number">04</span>
+            <span class="why-item__icon"><svg aria-hidden="true"><use href="#i-headset"></use></svg></span>
+            <div class="why-item__body">
+              <h3>Suporte que acompanha você</h3>
+              <p>12 meses de garantia, atendimento direto no WhatsApp e assistência mesmo depois da entrega.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Our journey -->
+    <section class="section section-gray" id="trajetoria">
+      <div class="container story__grid">
+
+        <header class="story-intro reveal">
+          <span class="eyebrow">NOSSA HISTÓRIA</span>
+          <h2>NOSSA <span class="highlight">TRAJETÓRIA</span></h2>
+          <p class="story-intro__lead">De 2019 até hoje, evoluindo com você.</p>
+
+          <p class="story-years" aria-label="Da fundação em 2019 até 2026">
+            <span class="story-years__from">2019</span>
+            <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            <span class="story-years__to">2026</span>
+          </p>
+
+          <blockquote class="story-quote">
+            “Primeiro você começa, depois você melhora.”
+            <footer>O lema que move a Da Praia desde o primeiro dia.</footer>
+          </blockquote>
+
+          <p>
+            O que começou em 2019, com poucas ferramentas e muita vontade de
+            acertar, hoje é referência nacional em futmesa e futpub. Foram anos
+            de mesas entregues, clientes atendidos e aprendizado acumulado em
+            cada peça fabricada.
+          </p>
+          <p>
+            Evoluímos materiais, acabamento e processo para entregar sempre o
+            mesmo padrão: <strong>excelência</strong>. E nada disso existiria sem vocês —
+            <strong>clientes e parceiros</strong> que jogam ao nosso lado desde o início.
+            <strong>Gratidão</strong> por fazer parte dessa história. É juntos que seguimos
+            evoluindo.
+          </p>
+        </header>
+
+        <div class="story-media reveal">
+          <div class="carousel" id="story-carousel" aria-roledescription="carrossel" aria-label="Fotos da trajetória da Da Praia">
+            <div class="carousel__track">
+              <figure class="carousel__slide">
+                <img src="assets/img/produtos/ft1.png" alt="Futmesa produzida pela Da Praia no início da trajetória" width="1080" height="1077" loading="lazy" decoding="async">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/img/produtos/ft2.png" alt="Futpub da Da Praia em destaque na oficina" width="1170" height="1170" loading="lazy" decoding="async">
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/img/produtos/ft3.png" alt="Detalhes do acabamento das mesas Da Praia" width="1170" height="1170" loading="lazy" decoding="async">
+              </figure>
+              <!-- Adicione aqui o slide 4 quando a foto produtos/ft4 estiver disponível -->
+            </div>
+
+            <button type="button" class="carousel__arrow carousel__arrow--prev" data-carousel-prev aria-label="Foto anterior">
+              <svg aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+            </button>
+            <button type="button" class="carousel__arrow carousel__arrow--next" data-carousel-next aria-label="Próxima foto">
+              <svg aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+            </button>
+
+            <div class="carousel__dots" data-carousel-dots></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured custom work -->
+    <section class="section" id="personalizados">
+      <div class="container feature-video__grid">
+
+        <figure class="feature-video reveal">
+          <div class="feature-video__frame">
+            <video controls preload="metadata" playsinline src="assets/videos/kaio-jorge.mp4"></video>
+          </div>
+          <figcaption>Kaio Jorge, do Cruzeiro, com a futmesa criada sob medida pela Da Praia.</figcaption>
+        </figure>
+
+        <header class="feature-video__intro reveal">
+          <span class="eyebrow">PERSONALIZADOS EXCLUSIVOS</span>
+          <h2>FEITA PARA QUEM <span class="highlight">VIVE O JOGO</span></h2>
+          <p>
+            Uma futmesa Da Praia nunca sai de prateleira. Cada mesa é projetada
+            sob medida para o perfil de quem vai jogar — do torcedor apaixonado
+            ao atleta profissional.
+          </p>
+          <p>
+            Foi assim com o <strong>Kaio Jorge, atacante do Cruzeiro</strong>:
+            identidade, cores e acabamento pensados nos mínimos detalhes. E é
+            exatamente assim que será com você.
+          </p>
+        </header>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="eyebrow">PROVA REAL</span>
+          <h2>QUEM JOGA, <span class="highlight">RECOMENDA</span></h2>
+          <p>Histórias reais de quem recebeu uma Da Praia em casa — do Nordeste para todo o Brasil.</p>
+        </header>
+
+        <div class="tcarousel reveal">
+          <ul class="tcarousel__grid" data-tcarousel-grid>
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>A futpub está no meu bar há quase três anos e aguenta o tranco de todo fim de semana. Cliente fica mais tempo, joga entre uma rodada e outra. Melhor dinheiro que gastei no ambiente.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">MA</span>
+                  <div>
+                    <strong>Marcos A.</strong>
+                    <span>Jaboatão dos Guararapes/PE</span>
+                    <span class="testimonial-card__since">Cliente desde 2021</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Comprei de longe, só pelo site, e confesso que bateu aquela dúvida normal. Chegou tudo certinho, muito bem embalada, e a mesa é ainda melhor do que nas fotos. Minha sala virou o ponto de encontro da família aos domingos.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">JC</span>
+                  <div>
+                    <strong>Juliana C.</strong>
+                    <span>São Paulo/SP</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Jogo futmesa desde moleque e essa aqui é outro nível. A bola desliza lisa, o manche é firme e o acabamento é caprichado demais. Dá pra ver que foi feita por quem entende.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">DF</span>
+                  <div>
+                    <strong>Diego F.</strong>
+                    <span>Fortaleza/CE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>O atendimento foi o que me ganhou. Tirei um monte de dúvida no WhatsApp antes de fechar e ninguém me apressou em momento nenhum. A mesa chegou em Campina dentro do prazo combinado.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">RM</span>
+                  <div>
+                    <strong>Rafael M.</strong>
+                    <span>Campina Grande/PB</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Presenteiei meu marido nos 40 anos e foi aquele sucesso. Ele escolheu o escudo do time dele pra tampa e ficou um luxo. Todo mundo que visita em casa pergunta onde comprou.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">CM</span>
+                  <div>
+                    <strong>Carla Menezes</strong>
+                    <span>Maceió/AL</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Mesa pesada, sólida, dá pra sentir a qualidade no toque. Montei em menos de uma hora com o vídeo que eles mandam. Zero arrependimento.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">TR</span>
+                  <div>
+                    <strong>Thiago R.</strong>
+                    <span>Belo Horizonte/MG</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Compro com eles desde o começo, lá de 2019. Já foram três mesas: uma minha e duas de presente. O trabalho só melhorou — e olha que a primeira já era ótima.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">GN</span>
+                  <div>
+                    <strong>Gustavo N.</strong>
+                    <span>Recife/PE</span>
+                    <span class="testimonial-card__since">Cliente desde 2019</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Chegou antes do prazo e super bem protegida. Meu pai se emocionou quando viu o nome dele gravado na mesa. Sério mesmo. Obrigada pelo cuidado com os detalhes.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">BS</span>
+                  <div>
+                    <strong>Bianca S.</strong>
+                    <span>Natal/RN</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>A mesa trabalha duro em evento e, depois de tanta gente batendo nela, continua inteira e bonita. É daquelas compras que se pagam.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">RT</span>
+                  <div>
+                    <strong>Rodrigo T.</strong>
+                    <span>Rio de Janeiro/RJ</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Fui atendido pelo próprio dono, que mandou foto da minha mesa sendo montada lá na oficina. Esse cuidado não tem preço. E o produto, claro, ficou top.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">PH</span>
+                  <div>
+                    <strong>Paulo H.</strong>
+                    <span>Caruaru/PE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Minha única reclamação é que meus filhos agora brigam pra ver quem joga primeiro. A mesa é boa demais e virou disputa em casa — do tipo boa.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">LP</span>
+                  <div>
+                    <strong>Luciana P.</strong>
+                    <span>Salvador/BA</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Ter uma futmesa profissional em casa era um sonho antigo. Personalizei com as cores do meu time e o resultado ficou impecável, coisa de marca grande.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">AL</span>
+                  <div>
+                    <strong>Anderson L.</strong>
+                    <span>Olinda/PE</span>
+                    <span class="testimonial-card__since">Cliente desde 2023</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Comprei pro meu pai no Dia dos Pais e ele me ligou emocionado quando abriu as caixas. Disseram que ia chegar dia 12 e chegou dia 10.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">PM</span>
+                  <div>
+                    <strong>Priscila M.</strong>
+                    <span>Campinas/SP</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>A personalização ficou melhor do que eu imaginei. Mandei uma arte meio torta e eles ajustaram tudo, mandaram prévia pra eu aprovar antes de produzir. Isso me passou muita confiança.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">EV</span>
+                  <div>
+                    <strong>Everton L.</strong>
+                    <span>Garanhuns/PE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Atendimento humano de verdade. Me responderam num domingo à noite, coisa que nem loja grande faz. A mesa então, nem se fala.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">AV</span>
+                  <div>
+                    <strong>Aline V.</strong>
+                    <span>Arapiraca/AL</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Jogo em torneio na minha cidade e a Da Praia é a mesa que todo mundo pede pra jogar. Bola corre lisa, defesa firme, jogo rápido.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">WP</span>
+                  <div>
+                    <strong>Wesley P.</strong>
+                    <span>Mossoró/RN</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Sou professor e levei a futpub pra quadra da escola. As crianças amaram e a mesa aguenta moleque solto o intervalo inteiro.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">JH</span>
+                  <div>
+                    <strong>Jorge H.</strong>
+                    <span>Juazeiro do Norte/CE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Coloquei na área de lazer do condomínio e virou point. O síndico já tá me perguntando o preço de uma segunda.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">SB</span>
+                  <div>
+                    <strong>Sandra B.</strong>
+                    <span>Feira de Santana/BA</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Moro em apartamento pequeno e mesmo assim deu tudo certo: fizeram na medida exata da minha varanda gourmet. Em espaço apertado, isso faz toda diferença.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">CR</span>
+                  <div>
+                    <strong>Camila R.</strong>
+                    <span>Santos/SP</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Moro no interior e achava que não entregariam até aqui. Chegou direitinho, sem um arranhão. Serviço de primeira, do orçamento à entrega.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">AS</span>
+                  <div>
+                    <strong>Alex Sandro</strong>
+                    <span>Petrolina/PE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Fui recebido com um atendimento direto, sem enrolação. Orçamento na hora, prazo cumprido e produto acima do que eu esperava.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">IM</span>
+                  <div>
+                    <strong>Igor M.</strong>
+                    <span>Uberlândia/MG</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>O vídeo de instrução da montagem salvou eu e meu marido de uma discussão em casa. Em quarenta minutos estava tudo pronto e todo mundo jogando.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">VT</span>
+                  <div>
+                    <strong>Vanessa T.</strong>
+                    <span>Niterói/RJ</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>No calor de Patos a mesa continua firme, nada empenou até hoje. Qualidade de material se confirma com o tempo.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">KC</span>
+                  <div>
+                    <strong>Kelly C.</strong>
+                    <span>Patos/PB</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Tenho 58 anos e aprendi a jogar futmesa na mesa deles. Meus netos agora não saem mais de casa aos domingos. Obrigada, Da Praia!</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">NA</span>
+                  <div>
+                    <strong>Neide A.</strong>
+                    <span>Recife/PE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Aqui a mesa roda evento praticamente todo mês e segue como nova. Material é coisa séria, aguenta uso profissional sem drama.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">BD</span>
+                  <div>
+                    <strong>Bruno D.</strong>
+                    <span>Curitiba/PR</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Madeira de verdade, parafuso bem acabado, zero farpa. Trabalho artesanal dá pra enxergar de longe.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">LC</span>
+                  <div>
+                    <strong>Leandro C.</strong>
+                    <span>Sobral/CE</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Pedi pra presentear o namorado e acabei pedindo uma segunda pra mim mesma. Vício bom demais.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">TF</span>
+                  <div>
+                    <strong>Tatiane F.</strong>
+                    <span>Goiânia/GO</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Já joguei em mesas bem mais caras e a Da Praia joga no mesmo nível. Preço honesto pra qualidade que entrega.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">MG</span>
+                  <div>
+                    <strong>Marcelo G.</strong>
+                    <span>Sorocaba/SP</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Comprei meio desconfiado por causa do frete longo até lá. Chegou antes do prazo e impecável. Já indiquei pra dois amigos.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">RD</span>
+                  <div>
+                    <strong>Ramon D.</strong>
+                    <span>Vitória da Conquista/BA</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonial-card">
+                <div class="stars" aria-label="Avaliação: 5 de 5 estrelas">
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                  <svg aria-hidden="true"><use href="#i-star"></use></svg>
+                </div>
+                <blockquote>Chegou em cinco dias úteis. O rastreio acompanhava tudo e a embalagem parecia cofre de banco. Mesa perfeita.</blockquote>
+                <div class="testimonial-card__footer">
+                  <span class="avatar">FA</span>
+                  <div>
+                    <strong>Felipe A.</strong>
+                    <span>João Pessoa/PB</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          <div class="tcarousel__dots" data-tcarousel-dots></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-gray" id="faq">
+      <div class="container faq__grid">
+
+        <header class="faq-intro reveal">
+          <span class="eyebrow">ANTES DO PRÓXIMO PASSO</span>
+          <h2>AINDA FICOU COM ALGUMA <span class="highlight">DÚVIDA</span>?</h2>
+          <p>
+            É normal querer certeza antes de investir em uma futmesa. Por isso
+            reunimos as respostas mais importantes aqui — claras, diretas e sem
+            complicação.
+          </p>
+
+          <ul class="faq-checks">
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              Orçamento rápido e sem compromisso
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              Arte aprovada por você antes da produção
+            </li>
+            <li>
+              <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              Envio para todo o Brasil
+            </li>
+          </ul>
+        </header>
+
+        <div class="faq-panel reveal">
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">01</span>
+              Será que uma futmesa é realmente para mim?
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Se você tem um bar, um espaço de lazer ou quer reunir família e
+                amigos, sim. Cada mesa é pensada para o seu espaço e para o tipo
+                de experiência que você quer criar — sempre com acabamento
+                profissional.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">02</span>
+              E se eu não entender de futmesa?
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Você não precisa entender nada. A gente orienta na escolha do
+                modelo, no espaço necessário e no pedido inteiro — você só
+                escolhe o estilo e recebe a mesa pronta para jogar.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">03</span>
+              Posso tirar dúvidas antes de fechar?
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Claro! Chama a gente no WhatsApp, conta sua ideia e recebe uma
+                indicação sincera de modelo e valor — sem nenhum compromisso de
+                compra.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">04</span>
+              Ainda não sei exatamente o que quero
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Sem problema. É assim que começam os melhores projetos: a gente
+                ajuda a transformar sua ideia em uma mesa única, personalizada e
+                que impressiona quem vê.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">05</span>
+              Vocês entregam na minha cidade? Em quanto tempo?
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Entregamos em todo o Brasil. Depois da aprovação da arte,
+                informamos o prazo exato de produção e do frete até a sua
+                cidade — tudo combinado antes de qualquer pagamento.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-card">
+            <summary>
+              <span class="faq-card__num">06</span>
+              Como funciona o pagamento?
+              <span class="faq-card__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-card__body">
+              <p>
+                Pagamento facilitado, com opção de parcelamento, combinado
+                direto no atendimento. A produção só começa depois do seu ok
+                final na arte.
+              </p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Brand manifesto -->
+    <section class="section manifesto" id="manifesto">
+      <div class="container">
+        <div class="manifesto__inner reveal">
+          <span class="eyebrow">DA PRAIA ESPORTES</span>
+          <h2>
+            MAIS QUE UMA MESA,<br>
+            <span class="highlight">O PONTO DE ENCONTRO</span> DA GALERA
+          </h2>
+          <p class="manifesto__text">
+            Desde 2019 construímos mesas que viram cenário de campeonato entre
+            amigos, de fim de tarde em família e daquele cliente que chega no
+            bar e não vai mais embora. É disso que a Da Praia é feita.
+          </p>
+        </div>
+
+        <ul class="manifesto__pillars reveal">
+          <li>
+            <strong>Feita à mão</strong>
+            <span>na oficina, peça por peça</span>
+          </li>
+          <li>
+            <strong>Do seu jeito</strong>
+            <span>cores, escudo e nome no jogo</span>
+          </li>
+          <li>
+            <strong>Pronta pra revanche</strong>
+            <span>estrutura que aguenta anos</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <h2>PENSOU EM FUTMESA PERSONALIZADA?</h2>
+        <p>Fale com a Da Praia Esportes e solicite seu orçamento sem compromisso.</p>
+        <a href="#" class="btn btn-white btn-lg"
+           data-contact="whatsapp"
+           data-message="Olá! Quero solicitar um orçamento de futmesa personalizada. Podem me passar valores e prazo de produção?">
+          <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg> Solicitar meu orçamento
+        </a>
+        <small class="cta__note">Atendimento Rápido • 24h Por Dia</small>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--footer" aria-label="Da Praia Esportes">
+          <img src="assets/img/logo/logo.png" alt="Da Praia Esportes" class="logo__img">
+        </a>
+        <p>Futmesas personalizadas feitas com qualidade, para casa, bar e campeonato. Entrega em todo o Brasil.</p>
+        <p class="footer__tagline">DIVERSÃO • AMIZADE • PAIXÃO</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Links rápidos">
+        <h3>Navegue</h3>
+        <ul>
+          <li><a href="modelos-futpub.html">Modelos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#porque">Por que nós</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h3>Contatos</h3>
+        <ul>
+          <li>
+            <a href="#" data-contact="whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+              <span>(81) 98575-5827</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-contact="instagram" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-instagram"></use></svg>
+              <span>@dapraiaesportes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-contact="email">
+              <svg aria-hidden="true"><use href="#i-email"></use></svg>
+              <span data-email-text>dpraiaesportes@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://www.mercadolivre.com.br/pagina/oro8zvaj"
+           class="btn-ml"
+           target="_blank"
+           rel="noopener noreferrer">
+          <span>Loja Mercado Livre</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span data-year>2026</span> Da Praia Esportes — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="whatsapp-float"
+     data-contact="whatsapp"
+     data-message="Olá! Vi o site de vocês e queria saber mais sobre as futmesas."
+     target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+    <span class="tooltip">Peça seu orçamento!</span>
+  </a>
+
+  <!-- Cart drawer -->
+  <div class="overlay" data-cart-close hidden></div>
+
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Meu orçamento" aria-hidden="true">
+    <header class="cart-drawer__head">
+      <h2><svg aria-hidden="true"><use href="#i-cart"></use></svg> Meu orçamento</h2>
+      <button type="button" class="cart-drawer__close" data-cart-close aria-label="Fechar orçamento">
+        <svg aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </header>
+
+    <div class="cart-drawer__list" data-cart-items></div>
+
+    <noscript>
+      <p class="cart-warning">Para montar seu orçamento, ative o JavaScript no navegador.</p>
+    </noscript>
+
+    <footer class="cart-drawer__actions">
+      <button type="button" class="btn btn-whatsapp btn-block" data-checkout>
+        <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg> Finalizar no WhatsApp
+      </button>
+      <button type="button" class="btn btn-outline btn-block" data-cart-clear>Limpar orçamento</button>
+    </footer>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+LOGO OFICIAL
+============
+
+O arquivo logo.png desta pasta é o logo oficial da empresa e já está
+aplicado em TODO o site:
+
+- Header (topo da página)
+- Rodapé (sobre um disco branco, porque o fundo do rodapé é azul escuro)
+- Favicon (ícone da aba), gerado a partir dele
+
+PARA ATUALIZAR O LOGO NO FUTURO
+-------------------------------
+1) Substitua o arquivo logo.png (mantenha o nome).
+2) Ideal: imagem quadrada (ex.: 1254x1254) com fundo branco ou transparente.
+3) Regenere o favicon — veja assets/favicon/LEIA-ME.txt.
+
+DICA: se o novo logo tiver fundo transparente, ele também funciona
+perfeitamente no rodapé escuro (o disco branco continua elegante).

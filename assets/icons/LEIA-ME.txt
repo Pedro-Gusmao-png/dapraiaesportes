@@ -1,0 +1,10 @@
+ÍCONES EXTRAS
+=============
+
+Os ícones usados no site já estão embutidos no index.html
+(em SVG, na seção "SPRITE DE ÍCONES"), então esta pasta está vazia
+de propósito.
+
+Use este espaço se um dia quiser adicionar novos ícones em arquivos
+separados (.svg), por exemplo: bandeiras de pagamento, ícones de
+redes sociais extras etc.
