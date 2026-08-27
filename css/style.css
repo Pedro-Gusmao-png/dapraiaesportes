@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    Main styles — sections follow the order of index.html
    ============================================================ */
 
@@ -1440,45 +1440,6 @@ h1, h2, h3 {
   width: 17px;
   height: 17px;
   fill: currentColor;
-}
-
-/* Mercado Livre store badge — compact pill, ML yellow */
-.btn-ml {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 16px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, .08);
-  background: linear-gradient(180deg, #FFE94A 0%, #FFE600 40%, #F5D800 100%);
-  color: #1A1A1A;
-  font-family: var(--font-body);
-  font-size: .76rem;
-  font-weight: 700;
-  letter-spacing: .3px;
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, .12),
-    inset 0 1px 0 rgba(255, 255, 255, .35);
-  transition:
-    background var(--transition),
-    box-shadow var(--transition),
-    transform var(--transition);
-}
-
-.btn-ml:hover {
-  background: linear-gradient(180deg, #FFEF6A 0%, #FFD200 40%, #E8CA00 100%);
-  box-shadow:
-    0 3px 10px rgba(255, 210, 0, .3),
-    0 1px 3px rgba(0, 0, 0, .15),
-    inset 0 1px 0 rgba(255, 255, 255, .4);
-  transform: translateY(-1px);
-}
-
-.btn-ml:active {
-  transform: translateY(0);
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, .12),
-    inset 0 1px 2px rgba(0, 0, 0, .08);
 }
 
 .footer-bottom {
