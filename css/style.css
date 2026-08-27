@@ -562,7 +562,27 @@ h1, h2, h3 {
   color: var(--primary);
 }
 
+.stat strong.stat__text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--primary);
+}
+
+.stat svg {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 14px;
+  display: block;
+  color: var(--primary);
+}
+
 .stat span {
+  display: block;
+  margin-top: 10px;
   font-size: .84rem;
   font-weight: 600;
   letter-spacing: 1px;
